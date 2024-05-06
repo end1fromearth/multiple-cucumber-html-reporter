@@ -24,7 +24,7 @@
 
                     <% if (scenario.ambiguous) { %>
                         <li>
-                            <span class="step ambiguous-background" data-toggle="tooltip" data-placement="top" title="Scenario has double step implementation and failed because of that.">
+                            <span class="step ambiguous-background" data-toggle="tooltip" data-placement="top" title="Scenario has an existing bug">
                             <%= scenario.ambiguous %>
                             </span>
                         </li>
@@ -95,7 +95,7 @@
                                             <i class="fa fa-minus-circle fa-2x pending-color"></i>
                                         </div>
                                     <% } else if(step.result.status.toLowerCase() === 'ambiguous') { %>
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step has double step implementation and failed because of that.">
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step has an existing bug">
                                             <i class="fa fa-flash fa-2x ambiguous-color"></i>
                                         </div>
                                     <% } else { %>
